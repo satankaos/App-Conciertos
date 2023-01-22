@@ -4,12 +4,11 @@
   ##Dispositivo = Escritorios
   ##Pantalla = 1281px para escritorios de mayor resolución
 */
-body{background-color:rgb(108,117,125);}
 
 @media (min-width:1281px ) {
   
   .padre{
-   
+    background-color:rgb(108,117,125);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -19,9 +18,9 @@ body{background-color:rgb(108,117,125);}
   .hijo{
     display: flex;
   justify-content: center;
-
+ 
 }
-
+}
 
 /*
   ##Dispositivo = Laptops, Desktops
@@ -43,7 +42,7 @@ body{background-color:rgb(108,117,125);}
 
   
 }
-
+}
 /*
   ##Dispositivo = Tabletas, Ipads (retrato)
   ##Pantalla = B/N 768px a 1024px
@@ -64,7 +63,7 @@ body{background-color:rgb(108,117,125);}
 
   
 }
-
+}
 /*
   ##Dispositivo = Tabletas, Ipads (horizontal)
   ##Pantalla = B/N 768px a 1024px
@@ -85,7 +84,7 @@ body{background-color:rgb(108,117,125);}
 
   
 }
-
+}
 /*
   ##Dispositivo = Tabletas de baja resolución, Móviles (Horizontal)
   ##Pantalla = B/N 481px a 767px
@@ -106,7 +105,7 @@ body{background-color:rgb(108,117,125);}
   justify-content: center;
 
 }
-
+}
 /*
   ##Dispositivo = La mayoría de los Smartphones Móviles (Retrato)
   ##Pantalla = B/N 320px a 479px
@@ -126,7 +125,7 @@ body{background-color:rgb(108,117,125);}
   justify-content: center;
 
 }
-  
+} 
 @media (min-width: 320px ) and (max-width: 480px ) {
   .padre{
    
@@ -140,4 +139,4 @@ body{background-color:rgb(108,117,125);}
     display: flex;
   justify-content: center;}
   
-  }}}}}}}
+  }
