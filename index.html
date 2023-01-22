@@ -23,7 +23,148 @@
         <a href="#" class="navbar-brand">conciertos</a>
         </header>
   <main>
-  
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Welcome!!!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#tab1" aria-current="page" data-bs-toggle="tab">test1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#tab2" data-bs-toggle="tab">test2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#tab3" data-bs-toggle="tab">test3</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#tab4" data-bs-toggle="tab">test4</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#tab5" data-bs-toggle="tab">test5</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        secc 6
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#tab6" data-bs-toggle="tab">Panel 6</a>
+                        <a class="dropdown-item" href="#tab7" data-bs-toggle="tab">Panel 7</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        secc 7
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#tab8" id="acc8" data-bs-toggle="tab">Panel 8</a>
+                        <a class="dropdown-item" href="#tab9" data-bs-toggle="tab">Panel 9</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container" id="main">
+      <div class="tab-content">
+          <div class="tab-pane active card" id="tab1">
+              <h4 class="card-header">test1</h4>
+              <div class="card-body">
+                  <p>Este es el contenido de la primera opción de menú</p>
+              </div>
+          </div>
+          <div class="tab-pane card" id="tab2">
+              <h4 class="card-header">test2</h4>
+              <div class="card-body">
+                  <p>Probando segunda opción...</p>
+                  <ul>
+                      <li>Pan</li>
+                      <li>Leche</li>
+                      <li>Azúcar</li>
+                      <li>Huevos</li>
+                      <li>Café</li>
+                      <li>Brócoli</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab3">
+              <h4>test3</h4>
+              <p>¿Y qué hay de lo mío? Se hace tarde... <i class="far fa-clock"></i></p>
+          </div>
+          <div class="tab-pane" id="tab4">
+              <h4>test4</h4>
+              <div class="alert alert-info" role="alert">
+                  <p>Yo casi mejor me callo...</p>
+                  <span class="badge rounded-pill bg-light text-dark">Sí, anda, va a ser mejor...</span>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab5">
+              <h4>test5: insertando departamentos...</h4><br>
+              <form>
+                  <fieldset>
+                      <div class="mb-3 row">
+                          <legend>Departamento</legend>
+                      </div>
+                      <div class="mb-3 row">
+                          <label for="idD" class="col-sm-2 col-form-label">Id Depto.</label>
+                          <div class="col-sm-10">
+                              <input type="number" class="form-control" placeholder="Introduzca el id" name="idDepto" id="idD">
+                          </div>
+                      </div>
+                      <div class="mb-3 row">
+                          <label for="inicD" class="col-sm-2 col-form-label">Iniciales</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" placeholder="Introduzca las iniciales..." name="inicDepto" id="inicD">
+                          </div>
+                      </div>
+                      <div class="mb-3 row">
+                          <label for="nombreD" class="col-sm-2 col-form-label">Nombre</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" placeholder="Introduzca el nombre completo..." name="nombreDepto" id="nombreD">
+                          </div>
+                      </div>
+                      <div class="mb-3 row" style="text-align: right">
+                          <div class="col-sm-2 offset-sm-10">
+                              <input class="btn btn-info" type="button" value="Insertar" onclick="alert('Insertando departamento...');">
+                          </div>
+                      </div>
+                  </fieldset>
+              </form>
+          </div>
+          
+          <div class="tab-pane card" id="tab6">
+              <h4 class="card-header">test6</h4>
+              <div class="card-body">
+                  <p>Probando ejemplo activación <a href="#" onclick="document.querySelector('#acc8').click();">ir a 8</a></p>
+                  
+              </div>
+          </div>
+          <div class="tab-pane card" id="tab7">
+              <h4 class="card-header">test7</h4>
+              <div class="card-body">
+                  <p>Nada especial pero estamos en la opción 7, dentro de la sección 6</p>
+                  
+              </div>
+          </div>
+          <div class="tab-pane card" id="tab8">
+              <h4 class="card-header">test8</h4>
+              <div class="card-body">
+                  <p>Nada especial pero estamos en la opción 8, dentro de la sección 7</p>
+                  
+              </div>
+          </div>
+          <div class="tab-pane card" id="tab9">
+              <h4 class="card-header">test9</h4>
+              <div class="card-body">
+                  <p>Nada especial pero estamos en la opción 9, dentro de la sección 7</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
 <div class="container-fluid bg-secondary p-3">
   <div class="padre">
     <div class=" hijo ">
