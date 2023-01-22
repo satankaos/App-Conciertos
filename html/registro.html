@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/FORM.SCSS">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 <title>Tiket </title>
@@ -24,85 +25,72 @@
         </header>
   <main>
 <div class="container-fluid bg-secondary p-3">
-          <div class="contform d-flex justify-content-center">
-    <form id="form" action="" >
-       
-        <!-- Grupo: Usuario -->
-        <div class="control" id="g_usuario">
-            <input class="controls" type="text" name="nombres_usuario" id="usuario" placeholder="Usuario">
-            <p></p>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01"  required>
+          <div class="valid-feedback">
+            ¡Se ve bien!
+          </div>
         </div>
-        <!-- Grupo: dni -->
-        <div class="control">
-            <input class="controls" type="text" name="dni" id="dni" placeholder="dni">
-            <p></p>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02"  required>
+          <div class="valid-feedback">
+            ¡Se ve bien!
+          </div>
         </div>
-        <!-- Grupo: nombre -->
-
-        <div class="control">
-            <input class="controls" type="text" name="nombres" placeholder=" Nombre" id="nombre">
-            <p></p>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, elije un nombre de usuario.
+            </div>
+          </div>
         </div>
-        <!-- Grupo: apellido-->
-        <div class="control">
-            <input class="controls" type="text" name="apellidos" placeholder=" Apellido" id="apellidos">
-            <p></p>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Proporciona una ciudad válida.
+          </div>
         </div>
-        <!-- Grupo: correo-->
-
-        <div class="control">
-            <input class="controls" type="email" name="correo" placeholder=" Correo" id="correo">
-            <p></p>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Genero</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Elige...</option>
+            <option>hombre</option>
+            <option>mujer</option>
+            <option>otro</option>
+          </select>
+          <div class="invalid-feedback">
+            Selecciona un estado válido.
+          </div>
         </div>
-        <!-- Grupo: contraseña-->
-        <div class="control">
-            <input class="controls" type="password" name="contraseña" placeholder="Contraseña"
-                id="contraseña">
-            <p></p>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Proporciona un código postal válido.
+          </div>
         </div>
-        <!-- Grupo: repetir contraseña-->
-        <div class="control">
-            <input class="controls" type="password" name="repetir_contraseña" id="repetir_contraseña"
-                placeholder=" Repetir contraseña">
-            <p></p>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepta los términos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              Debe estar de acuerdo antes de enviar.
+            </div>
+          </div>
         </div>
-        <!-- Grupo: Tfono-->
-        <div class="control">
-            <input class="controls" type="text" name="telefono" placeholder="Telefono" id="telefono">
-            <p></p>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
         </div>
-
-        <!-- Grupo: iban-->
-        <div class="control">
-            <input class="controls" type="text" name="IBAN" placeholder="Iban" id="IBAN">
-            <p></p>
-        </div>
-        <!-- Grupo: swift-->
-        <div class="control">
-            <input class="controls" type="text" name="SWIFT" placeholder="Swift" id="SWIFT">
-            <p></p>
-        </div>
-        <!-- Grupo: nac-->
-        <div>
-            <p class="oP">cumpleaños</p>
-            <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
-                placeholder="Fecha nacimiento">
-            <p></p>
-        </div>
-        <br>
-
-        <div>
-            <input class="botons" type="submit" value="Registrar" id="boton" >
-            
-            <input class="botons" type="reset" value="Reset" id="botonr" onclick="window.location.reload()">
-
-        </div>
-       
-    </form>
-    <script src="./js/main.js" type="text/javascript"></script>
-</div>
-</div>
-</div>
+      </form>
 </div>
   </main>
   <footer>
@@ -111,7 +99,9 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="/js/bootstrap.min.js">
   </script>
-
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="/js/validarFORM.JS">
+  </script>
   <script src="/js/jquery-3.3.1.slim.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>

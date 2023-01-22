@@ -4,7 +4,7 @@
   ##Dispositivo = Escritorios
   ##Pantalla = 1281px para escritorios de mayor resolución
 */
-
+body{background-color:rgb(108,117,125);}
 
 @media (min-width:1281px ) {
   
@@ -138,6 +138,6 @@
   }
   .hijo{
     display: flex;
-  justify-content: center;
-
-}
+  justify-content: center;}
+  
+  }}}}}}}
