@@ -28,6 +28,9 @@
 */
 
 @media (min-width:1025px ) and (max-width: 1280px ) {
+  .carousel, .carousel-inner > .item > img {
+    height: 100px;
+  }
   .padre{
    
     display: flex;
