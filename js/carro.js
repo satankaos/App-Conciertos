@@ -2,26 +2,26 @@ const baseDeDatos = [
     {
         id: 1,
         nombre: 'Viña rock',
-        precio: 1,
-        imagen: '/otros/cartel-vina-rock-2022.jpg'
+        precio: 150,
+        imagen: '/img/cartel-vina-rock-2022.jpg'
     },
     {
         id: 2,
         nombre: 'Resureccion Fest',
-        precio: 1.2,
-        imagen: '/otros/resurrection-fest-2022-cartel.jpg'
+        precio: 290,
+        imagen: '/img/resurrection-fest-2022-cartel.jpg'
     },
     {
         id: 3,
         nombre: 'Primavera Trompetera',
-        precio: 2.1,
-        imagen: '/otros/primavera-trompetera-festival-2022.jpg'
+        precio: 100,
+        imagen: '/img/primavera-trompetera-festival-2022.jpg'
     },
     {
         id: 4,
         nombre: 'Marea Rock Rock',
-        precio: 0.6,
-        imagen: '/otros/marea-rock-festival-2022.jpg'
+        precio: 55,
+        imagen: '/img/marea-rock-festival-2022.jpg'
     }
 
 ];
